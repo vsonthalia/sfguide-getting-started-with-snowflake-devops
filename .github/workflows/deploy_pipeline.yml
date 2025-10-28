@@ -16,8 +16,10 @@ jobs:
 
     env:
       REPO_NAME: "quickstart_common.public.quickstart_repo"
-      SNOWFLAKE_CONNECTIONS_DEFAULT_AUTHENTICATOR: "SNOWFLAKE_JWT"
-      SNOWFLAKE_CONNECTIONS_DEFAULT_PRIVATE_KEY_FILE: ".snowflake/snowflake_rsa_key"
+      
+      #SNOWFLAKE_CONNECTIONS_DEFAULT_AUTHENTICATOR: "SNOWFLAKE_JWT"
+      
+      #SNOWFLAKE_CONNECTIONS_DEFAULT_PRIVATE_KEY_FILE: ".snowflake/snowflake_rsa_key"
       # Read connection secrets
       SNOWFLAKE_CONNECTIONS_DEFAULT_ACCOUNT: ${{ secrets.SNOWFLAKE_ACCOUNT }}
       SNOWFLAKE_CONNECTIONS_DEFAULT_USER: ${{ secrets.SNOWFLAKE_USER }}
